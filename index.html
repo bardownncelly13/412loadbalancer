@@ -79,10 +79,11 @@
         </p>
 
         <p>
-            The LoadBalancer class manages server allocation, request generation,
-            queue monitoring, IP blocking, and overall simulation timing. WebServer
-            objects process one request at a time, while Request objects store
-            metadata such as IP addresses, processing time, and job type.
+            The Main class is used to configure the load blanancer you can have multiple if you want to. It will also create random requests at certain intervals to send to be 
+            processed. The LoadBalancer class manages server allocation, If the list of request gets to large new servers will be alocated and if the requests are small servers will die.
+            It will do this by queue monitoring. IP blocking will also be managed by the load balencer and so will the overall simulation timing. WebServer
+            objects process one request at a time and are managed by the load balencer. Request objects store
+            metadata such as IP addresses, processing time, and job type which is needed so the load balencer can allocate servers properly.
         </p>
     </div>
 
