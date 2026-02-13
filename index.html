@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSCE 412 - Project 3 | Load Balancer Design</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #500000; /* TAMU maroon */
+            padding: 20px;
+            text-align: center;
+        }
+
+        header img {
+            max-height: 80px;
+        }
+
+        .container {
+            width: 85%;
+            margin: 40px auto;
+        }
+
+        .uml-image {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .uml-image img {
+            max-width: 100%;
+            border: 2px solid #ccc;
+            border-radius: 6px;
+        }
+
+        .description {
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            line-height: 1.6;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <!-- Replace branding.png with your branding image filename -->
+    <img src="branding.png" alt="Branding Logo">
+</header>
+
+<div class="container">
+
+    <h1>Load Balancer Design - UML</h1>
+
+    <div class="uml-image">
+        <!-- Replace uml.png with your UML diagram filename -->
+        <img src="uml.png" alt="Load Balancer UML Diagram">
+    </div>
+
+    <div class="description">
+        <h2>Design Overview</h2>
+        <p>
+            This project models a load balancing system that simulates incoming web
+            requests and distributes them across dynamically allocated web servers.
+            The system maintains a request queue, processes requests in clock cycles,
+            and scales the number of servers based on queue thresholds.
+        </p>
+
+        <p>
+            The LoadBalancer class manages server allocation, request generation,
+            queue monitoring, IP blocking, and overall simulation timing. WebServer
+            objects process one request at a time, while Request objects store
+            metadata such as IP addresses, processing time, and job type.
+        </p>
+    </div>
+
+</div>
+
+</body>
+</html>
